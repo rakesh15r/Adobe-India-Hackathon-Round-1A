@@ -141,7 +141,7 @@ pip install -r requirements.txt
 
 ## ✍️ Authors / Team
 
-- Team: `[Your Team Name]`
+- Team: code OG
 - Submission for **Adobe India Hackathon 2025 (Round 1A)**
 - Challenge: "Connecting the Dots Through Docs"
 
