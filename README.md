@@ -126,8 +126,6 @@ python main.py
 ```
 Processes all `.pdf` files in `input/` folder and saves results to `output/`.
 
-Certainly! Here’s the section in an **edit-README** format, using markdown and keeping edits clearly segmentable for drop-in to your main README.md file.  
-You can copy-paste these blocks directly.
 
 ## 🔧 Dependencies
 
