@@ -1,5 +1,3 @@
-Certainly! Here is a **README.md** for your Round 1A "Connecting the Dots" Hackathon solution, reflecting your approach, training data, code modules, and instructions:
-
 # Adobe Hackathon 2025: Connecting the Dots  
 ## Round 1A — Structured PDF Outline Extraction
 
