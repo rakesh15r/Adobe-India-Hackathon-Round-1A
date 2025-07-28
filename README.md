@@ -17,8 +17,6 @@ This project automates extraction of hierarchical outlines (title, headings H1/H
 
 Certainly! Here’s a **README.md** combining your detailed structure, the specifics of your solution, and best practices aligned to the Adobe Hackathon Round 1A requirements. This synthesizes all your technical elements, makes installation and usage clear, and is hackathon presentation-ready.
 
-# 📘 PDF Outline Extraction System  
-*Adobe Hackathon 2025 – Round 1A: "Connecting the Dots"*
 
 ## 🚀 Objective
 
