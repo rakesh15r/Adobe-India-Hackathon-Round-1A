@@ -135,9 +135,4 @@ Reach out for clarifications or collaboration!
 
 ---
 
-Sources
-[1] 6874faecd848a_Adobe_India_Hackathon_-_Challenge_Doc_copy.pdf https://ppl-ai-file-upload.s3.amazonaws.com/web/direct-files/attachments/85220937/ca180f98-8128-419d-b361-dd5c21bb62b3/6874faecd848a_Adobe_India_Hackathon_-_Challenge_Doc_copy.pdf
-[2] download.py https://ppl-ai-file-upload.s3.amazonaws.com/web/direct-files/attachments/85220937/50fb8ed3-8b27-42cd-bb9c-2184d0f357a5/download.py
-[3] train_classifier.py https://ppl-ai-file-upload.s3.amazonaws.com/web/direct-files/attachments/85220937/15946d0f-a3e9-45ec-8325-cbe0e96200bb/train_classifier.py
-[4] main.py https://ppl-ai-file-upload.s3.amazonaws.com/web/direct-files/attachments/85220937/145cc0ae-5af8-467a-be1c-53ed0eb7b049/main.py
-[5] utils.py https://ppl-ai-file-upload.s3.amazonaws.com/web/direct-files/attachments/85220937/75295909-9c62-4693-b239-cf1eb866d65f/utils.py
+
