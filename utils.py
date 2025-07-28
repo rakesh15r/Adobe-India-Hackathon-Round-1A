@@ -13,7 +13,7 @@ def clean_heading_text(text):
     return text
 
 # Load trained classifier and label encoder
-clf, le = joblib.load("model-best.pkl")
+clf, le = joblib.load("model.pkl")
 
 def overlaps(line_bbox, box_bbox, margin=2):
     lx0, ly0, lx1, ly1 = line_bbox
