@@ -74,6 +74,46 @@ Extracts structured and hierarchical outlines from PDF documents—including **t
 - Output JSON is saved in `output/` and matches hackathon format.
 
 
+## 🗃️ Dataset
+
+- Used the **arxiv-metadata-oai-snapshot** dataset to select 1,000 diverse research papers.
+- Downloaded their PDFs using `download.py` and placed them in the `input_arxiv/` directory for training.
+
+## 📐 Features
+
+- Extracted rich, per-line features from each PDF:
+  - **font size**
+  - **boldness**
+  - **indentation**
+  - **starts with numbers**
+  - **vertical position (y0)**
+  - **proximity to top of page**
+  - **word count**
+  - **outline cues and detected heading depth**
+  - Additional cues (e.g., centering, box/image overlap, semantic indicators)
+- Title detection leverages large font size, proximity to the top of page 1, and centering.
+- Heading level inference is data-driven: combines style and structural cues beyond just font-size.
+
+## 🤖 Model
+
+- Utilizes a **RandomForestClassifier** (scikit-learn), hyperparameter-tuned with `GridSearchCV`.
+- Three main classes: **H1**, **H2**, **H3** (non-headings filtered out).
+- Model and `LabelEncoder` are serialized together as `model-best.pkl` (kept <200MB as per constraints).
+
+## 📝 Outline Extraction Pipeline
+
+- For each PDF:
+  - All lines and corresponding features are parsed via `utils.py`.
+  - The trained model predicts heading class for each line.
+  - Hierarchical outline is assembled:
+    - **Title** (extracted from large/centered lines on page 1)
+    - Heading hierarchy (**H1/H2/H3**) with page number and text
+
+## 🤔 Why Machine Learning?
+
+- **PDF layouts are highly inconsistent**: headings are not reliably the largest or boldest lines.
+- The ML approach robustly learns style and position patterns across document templates, fonts, and languages, making it generalizable and effective under real-world variability.
+
 
 ## 🐳 Run Offline & Locally with Docker
 
