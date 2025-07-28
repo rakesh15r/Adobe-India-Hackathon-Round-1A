@@ -2,8 +2,8 @@ import os
 import json
 from utils import detect_headings
 
-INPUT_DIR = "input"
-OUTPUT_DIR = "output"
+INPUT_DIR = "app/input"
+OUTPUT_DIR = "app/output"
 
 os.makedirs(OUTPUT_DIR, exist_ok=True)
 
