@@ -73,24 +73,7 @@ Extracts structured and hierarchical outlines from PDF documents—including **t
 - Assembles hierarchical outline (Title, H1/H2/H3 with page numbers).
 - Output JSON is saved in `output/` and matches hackathon format.
 
-🔧 Dependencies
-	•	Python 3.8+
-	•	pdfminer.six (PDF parsing)
-	•	numpy, scikit-learn, joblib
-	•	All are installed inside Docker automatically.
-📝 Solution Components
-	•	main.py — Orchestrates extraction for each PDF.
-	•	utils.py — PDF parsing, feature engineering, ML inference.
-	•	model-best.pkl — Trained heading classifier (self-contained).
-	•	train_classifier.py — Model training pipeline (run outside of container).
-⚡ Performance & Limits
-	•	Model tested on 50-page PDFs: completes within 10 seconds.
-	•	Model binary < 200MB, no network, no GPU needed.
-	•	Ready for diverse heading styles; processing is modular for Round 1B.
-💡 Improvements & Notes
-	•	Good performance on Arxiv/academic papers and general reports.
-	•	Not solely font-size based; uses positional, typographical, and semantic cues.
-	•	Extensible for further downstream document intelligence tasks.
+
 
 ## 🐳 Run Offline & Locally with Docker
 
